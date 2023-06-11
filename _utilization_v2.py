@@ -45,7 +45,6 @@ def main():
     app_disk = args.disk_app
 
     # SSH details
-    #hosts = ['10.16.51.15', '10.16.51.6', '10.16.50.241', '10.16.51.192']
     private_key = os.path.expanduser('/.ssh/id_rsa')
     username = "app"
     #key_filename = private_key
