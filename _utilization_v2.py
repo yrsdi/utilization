@@ -47,8 +47,7 @@ def main():
     # SSH details
     private_key = os.path.expanduser('/.ssh/id_rsa')
     username = "app"
-    #key_filename = private_key
-
+    
     # Connect to the server
     client = ssh_connect(server_ip, username, private_key)
 
@@ -62,7 +61,6 @@ def main():
             disk_usage_root = get_disk_usage(client, root_disk)
             # Get Disk usage for '/app' directory
             disk_usage_app = get_disk_usage(client, app_disk)
-
             # Print results
             print(f'Host: {server_ip}')
             print(f'CPU_usage: {cpu_usage}%')
